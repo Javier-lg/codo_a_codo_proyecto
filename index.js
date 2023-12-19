@@ -2,10 +2,10 @@ require('dotenv').config();
 // app principal
 const express = require('express');
 const app = express();
-const mainRoutes = require('./src/routes/mainRoutes.js');
-const adminRoutes = require('./src/routes/adminRoutes.js');
-const authRoutes = require('./src/routes/authRoutes.js');
-const storeRoutes = require('./src/routes/storeRoutes.js');
+const mainRoutes = require('./src/routes/mainRoutes');
+const adminRoutes = require('./src/routes/adminRoutes');
+const authRoutes = require('./src/routes/authRoutes');
+const storeRoutes = require('./src/routes/storeRoutes');
 const path = require('path');
 
 const session = require('express-session')
