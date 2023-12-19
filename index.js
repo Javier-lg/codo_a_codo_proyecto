@@ -41,7 +41,8 @@ app.use((req, res, next) => {
 app.use(methodOverride('__method'));
 app.use(express.urlencoded());
 app.use(express.json());
-app.use(express.static('public'));
+//app.use(express.static('public'));
+app.use(express.static(__dirname + '/public'))
 app.use('/', mainRoutes);
 app.use('/admin', adminRoutes);
 app.use('/auth', authRoutes);
