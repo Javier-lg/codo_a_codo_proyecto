@@ -1,0 +1,30 @@
+<header>
+  <nav class="nav-bar">
+    <picture>
+      <a href="/home">
+        <img src="/assets/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca funko">
+      </a>
+    </picture>
+    <ul class="navBar-ul">
+      <li>
+      <% if (user) { %>
+          <p>Bienvenido, <%= user.name %>!</p>
+      <% } else { %>
+          <p>No está logueado</p>
+      <% } %>
+      </li>
+      <li class="navBar-li">
+        <a href="/shop">SHOP</a>
+      </li>
+      <li class="navBar-li">
+        <a href="">CONTACTO</a>
+      </li>
+      <li class="navBar-li">
+        <a href="/auth/login">LOGIN</a>
+      </li>
+      <li class="navBar-li">
+        <a href="/shop/cart"><img src="/assets/icons/cart-icon.svg" alt="Carrito de compras"></a>
+      </li>
+    </ul>
+  </nav>
+</header>
