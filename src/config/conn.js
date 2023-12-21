@@ -3,10 +3,10 @@ require('dotenv').config();
 
 
 const pool = mysql.createPool({
-    host: 'sql10.freesqldatabase.com',
-    user: 'sql10671673',
-    password: 'iD13jFzYb8',
-    database: 'sql10671673',
+    host: 'localhost',
+    user: 'root',
+    password: 'Gondor.23',
+    database: 'funko_store',
     port: 3306,
     waitForConnections: true,
     connectionLimit: 10,

@@ -10,11 +10,34 @@ const getProductById = async (id) => {
 
 const getRelated = async (id) => {
     return products.getRelated(id);
-}
+};
 
+const deleteProductById = async(id) => {
+    return products.deleteProductById(id);
+};
 
+const getCollections = async () => {
+    return products.getCollections();
+};
+
+const deleteCollectionById = async (id) => {
+    return products.deleteCollectionById(id);
+};
+
+const create = async (item) => {
+    products.create(item);
+};
+
+const update = async(item,id) => {
+    products.update(id,item);
+};
 module.exports = {
     getProducts,
     getProductById,
-    getRelated
+    getRelated,
+    deleteProductById,
+    getCollections,
+    deleteCollectionById,
+    create,
+    update
 }

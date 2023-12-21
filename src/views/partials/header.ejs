@@ -8,7 +8,7 @@
     <ul class="navBar-ul">
       <li>
       <% if (user) { %>
-          <p><a class="link-opacity-100" href="/auth/logout">Bienvenido, <%= user.name %>!</a></p>
+          <p>Bienvenido, <%= user.name %>!</p>
       <% } else { %>
           <p>No está logueado</p>
       <% } %>
@@ -17,7 +17,7 @@
         <a href="/shop">SHOP</a>
       </li>
       <li class="navBar-li">
-        <a href="">CONTACTO</a>
+        <a href="/contact">CONTACTO</a>
       </li>
       <li class="navBar-li">
         <a href="/auth/login">LOGIN</a>

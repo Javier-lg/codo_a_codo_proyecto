@@ -65,7 +65,6 @@ module.exports ={
         console.log('ON DESTROY SESSION = ',req.session.id)
 
         req.session.destroy();
-        res.render('home/index');
-
+        res.send("logout success!");
     },
 }

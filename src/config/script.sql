@@ -37,9 +37,10 @@ CREATE TABLE CollectionProduct (
     collection_id INT,
     product_id INT,
     PRIMARY KEY (collection_id, product_id),
-    FOREIGN KEY (collection_id) REFERENCES collection(collection_id),
-    FOREIGN KEY (product_id) REFERENCES product(product_id)
+    FOREIGN KEY (collection_id) REFERENCES collection(collection_id) ON DELETE CASCADE,
+    FOREIGN KEY (product_id) REFERENCES product(product_id) ON DELETE NO ACTION
 );
+
 
 
 
@@ -70,7 +71,7 @@ INSERT INTO product (
 (11, 'Pokémon', 'Anime & Manga', 'Charmander', 'Charmander with its tail flame', 14.99, 3, 'F-1193', '/img/charmander.jpg', '/img/charmander-back.jpg'),
 (12, 'Pokémon', 'Anime & Manga', 'Squirtle', 'Squirtle with its water spout', 14.99, 4, 'F-1194', '/img/squirtle.jpg','/img/squirtle-back.jpg'),
 (13, 'Marvel', 'Comics & Superheroes', 'Wolverine', 'Wolvie with his things (?)', 14.99, 6, 'F-1195', '/img/wolverine.jpg','/img/wolverine-back.jpg'),
-(14, 'Marvel', 'Comics & SUperheroes', 'Cyclops', 'Cyclops the leader of the X-Men', 60.00, 6, 'F-1196','/img/cyclops.jpm','/img/cyclops-back.jpg');
+(14, 'Marvel', 'Comics & SUperheroes', 'Cyclops', 'Cyclops the leader of the X-Men', 60.00, 6, 'F-1196','/img/cyclops.jpg','/img/cyclops-back.jpg');
 -- Agrega las colecciones
 
 INSERT INTO collection (
